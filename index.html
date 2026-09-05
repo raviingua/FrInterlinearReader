@@ -275,7 +275,7 @@
     <div class="controls" id="controls">
       <div class="readout">
         <span><b id="pos">0</b> / <span id="total">0</span></span>
-        <span><b id="wpm">300</b> wpm</span>
+        <span><b id="wpm">100</b> wpm</span>
         <span><b id="timeleft">0:00</b> left</span>
       </div>
       <div class="speedrow">
@@ -480,7 +480,7 @@
   $('voiceMethodSelect').addEventListener('change',function(){ voiceMethod=this.value; });
 
   /* player */
-  var phrases=[],groups=[],groupOf=[],idx=0,wpm=300,playing=false,timer=null;
+  var phrases=[],groups=[],groupOf=[],idx=0,wpm=100,playing=false,timer=null;
   var lang='fr',ttsOn=true,currentLang='en';
   var playMode='continue', playBoundIdx=0; // playMode 'single' = play current sentence only, then stop
   var hasTTS=('speechSynthesis' in window);
